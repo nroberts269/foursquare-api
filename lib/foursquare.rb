@@ -1,7 +1,16 @@
-require 'foursquare_node'
-require 'foursquare_checkins'
-require 'foursquare_photo'
-require 'foursquare_settings'
-require 'foursquare_tips'
-require 'foursquare_user'
-require 'foursquare_venue'
+require 'foursquare/configurable'
+require 'foursquare/node'
+require 'foursquare/checkins'
+require 'foursquare/photo'
+require 'foursquare/settings'
+require 'foursquare/tips'
+require 'foursquare/user'
+require 'foursquare/venue'
+
+module Foursquare
+  class << self
+    include Foursquare::Configurable
+  end
+end
+
+Foursquare.setup

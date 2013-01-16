@@ -26,25 +26,22 @@ Gem::Specification.new do |s|
     "VERSION",
     "foursquare-api.gemspec",
     "lib/foursquare.rb",
-    "lib/foursquare_checkins.rb",
-    "lib/foursquare_node.rb",
-    "lib/foursquare_photo.rb",
-    "lib/foursquare_settings.rb",
-    "lib/foursquare_tips.rb",
-    "lib/foursquare_user.rb",
-    "lib/foursquare_venue.rb",
-    "test/helper.rb",
-    "test/test_foursquare-api.rb"
+    "lib/foursquare/checkins.rb",
+    "lib/foursquare/configurable.rb",
+    "lib/foursquare/default.rb",
+    "lib/foursquare/node.rb",
+    "lib/foursquare/photo.rb",
+    "lib/foursquare/settings.rb",
+    "lib/foursquare/tips.rb",
+    "lib/foursquare/user.rb",
+    "lib/foursquare/venue.rb",
+    "lib/foursquare/version.rb"
   ]
   s.homepage = "http://github.com/nroberts269/foursquare-api"
   s.licenses = ["GPL"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
   s.summary = "%Q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}"
-  s.test_files = [
-    "test/helper.rb",
-    "test/test_foursquare-api.rb"
-  ]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

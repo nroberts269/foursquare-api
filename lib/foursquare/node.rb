@@ -1,16 +1,17 @@
 module Foursquare
   class Node
+    include Foursquare::Configurable
+
     def initialize(access_token)
-      @access_token       = access_token
-      @base_url = "https://api.foursquare.com:443/v2/"
+      @access_token = access_token
     end
 
-    def perform_graph_request(endpoint, params={}, method="get")
+    def perform_graph_request(params={}, method="get")
       require 'net/http'
 
       @query_string = "?"
       @query_string += "oauth_token=#{CGI.escape(@access_token)}" unless @access_token.empty?
-      @query_string += "v=#{DateTime.now.strftime("%Y%m%d")}" unless @access_token.empty?
+      @query_string += "&v=#{Foursquare::Configurable.options[:api_version]}" if Foursquare::Configurable.options[:api_version]
 
       if method=="get"
         params.each{|key, val| @query_string += "&#{key}=#{val}"}
