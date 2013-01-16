@@ -1,4 +1,5 @@
 require 'foursquare/configurable'
+require 'foursquare/default'
 require 'foursquare/node'
 require 'foursquare/checkins'
 require 'foursquare/photo'
