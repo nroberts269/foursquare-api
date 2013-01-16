@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
     "foursquare-api.gemspec",
     "lib/foursquare.rb",
     "lib/foursquare/checkins.rb",
-    "lib/foursquare/configurable.rb",
     "lib/foursquare/node.rb",
     "lib/foursquare/photo.rb",
     "lib/foursquare/settings.rb",
