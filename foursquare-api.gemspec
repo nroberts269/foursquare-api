@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{foursquare-api}
+  s.name = "foursquare-api"
   s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["nroberts269"]
-  s.date = %q{2013-01-16}
-  s.description = %q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}
-  s.email = %q{nroberts269@live.com}
+  s.date = "2013-01-16"
+  s.description = "foursquare-api is a Ruby wrapper for the new Foursqauare V2 API"
+  s.email = "nroberts269@live.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -36,18 +36,17 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_foursquare-api.rb"
   ]
-  s.homepage = %q{http://github.com/nroberts269/foursquare-api}
+  s.homepage = "http://github.com/nroberts269/foursquare-api"
   s.licenses = ["GPL"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{%Q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}}
+  s.rubygems_version = "1.8.24"
+  s.summary = "%Q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}"
   s.test_files = [
     "test/helper.rb",
     "test/test_foursquare-api.rb"
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then

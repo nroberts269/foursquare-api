@@ -13,12 +13,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "foursquare-api"
-  gem.homepage = "http://github.com/ronaldwan/foursquare-api"
+  gem.homepage = "http://github.com/nroberts269/foursquare-api"
   gem.license = "GPL"
   gem.summary = "%Q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}"
   gem.description = "foursquare-api is a Ruby wrapper for the new Foursqauare V2 API"
-  gem.email = "ronald__wan@hotmail.com"
-  gem.authors = ["ronaldwan"]
+  gem.email = "nroberts269@live.com"
+  gem.authors = ["nroberts269"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
@@ -42,7 +42,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
