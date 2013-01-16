@@ -1,5 +1,4 @@
 require 'foursquare/configurable'
-require 'foursquare/default'
 require 'foursquare/node'
 require 'foursquare/checkins'
 require 'foursquare/photo'
@@ -13,5 +12,3 @@ module Foursquare
     include Foursquare::Configurable
   end
 end
-
-Foursquare.setup
