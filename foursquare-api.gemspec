@@ -5,27 +5,19 @@
 
 Gem::Specification.new do |s|
   s.name = %q{foursquare-api}
-  s.version = "0.0.5"
+  s.version = "0.0.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["ronaldwan"]
-  s.date = %q{2011-01-15}
+  s.authors = ["nroberts269"]
+  s.date = %q{2013-01-16}
   s.description = %q{foursquare-api is a Ruby wrapper for the new Foursqauare V2 API}
-  s.email = %q{ronald__wan@hotmail.com}
+  s.email = %q{nroberts269@live.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
     ".document",
-    ".idea/.rakeTasks",
-    ".idea/dictionaries/ronaldw.xml",
-    ".idea/encodings.xml",
-    ".idea/foursquare-api.iml",
-    ".idea/misc.xml",
-    ".idea/modules.xml",
-    ".idea/vcs.xml",
-    ".idea/workspace.xml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -33,7 +25,6 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "foursquare-api.gemspec",
-    "lib/.DS_Store",
     "lib/foursquare.rb",
     "lib/foursquare_checkins.rb",
     "lib/foursquare_node.rb",
@@ -45,7 +36,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_foursquare-api.rb"
   ]
-  s.homepage = %q{http://github.com/ronaldwan/foursquare-api}
+  s.homepage = %q{http://github.com/nroberts269/foursquare-api}
   s.licenses = ["GPL"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
