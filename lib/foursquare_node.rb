@@ -10,6 +10,7 @@ module Foursquare
 
       @query_string = "?"
       @query_string += "oauth_token=#{CGI.escape(@access_token)}" unless @access_token.empty?
+      @query_string += "v=#{DateTime.now.strftime("%Y%m%d")}" unless @access_token.empty?
 
       if method=="get"
         params.each{|key, val| @query_string += "&#{key}=#{val}"}
